@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="citta_array">
+        <item>Scegli citta</item>
+        <item>Milano</item>
+        <item>Roma</item>
+        <item>Pescara</item>
+        <item>Torino</item>
+    </string-array>
+</resources>

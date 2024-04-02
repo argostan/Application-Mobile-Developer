@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+    android:id="@+id/navigation"
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home">
+    </item>
+    <item
+        android:id="@+id/Contatto"
+        android:icon="@drawable/contact"
+        android:title="Contatto">
+    </item>
+    <item
+        android:id="@+id/post"
+        android:icon="@drawable/baseline_signpost_24"
+        android:title="Post">
+    </item>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profilo">
+    </item>
+    <item
+        android:id="@+id/ReportsFragment"
+        android:icon="@drawable/report"
+        android:title="Report">
+    </item>
+</group>
+
+    <group
+        android:id="@+id/navigation_logout"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/round_logout_24"
+            android:title="Logout">
+        </item>
+        <item
+            android:id="@+id/SettingFragment"
+            android:icon="@drawable/setting"
+            android:title="Setting">
+        </item>
+    </group>
+</menu>

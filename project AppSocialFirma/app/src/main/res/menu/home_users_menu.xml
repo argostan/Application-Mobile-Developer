@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/navigation"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home">
+        </item>
+        <item
+            android:id="@+id/email"
+            android:icon="@drawable/baseline_email_24"
+            android:title="Email">
+        </item>
+        <item
+            android:id="@+id/post"
+            android:icon="@drawable/baseline_signpost_24"
+            android:title="Post">
+        </item>
+
+        <item android:id="@+id/setting"
+            android:title="Setting"
+            android:icon="@drawable/baseline_density_medium_24" >
+            </item>
+            <!--<menu>
+
+                <item
+                    android:id="@+id/nav_gestione_account"
+                    android:title="Gestione Account" />
+                <item
+                    android:id="@+id/nav_impostazioni_app"
+                    android:title="Impostazioni App" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout" />
+            </menu>
+
+        </item>-->
+
+
+    </group>
+</menu>
