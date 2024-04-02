@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/cerca"
+        android:title="@string/find"
+        android:icon="@drawable/icon_ricerca"
+        app:showAsAction="ifRoom">
+    </item>
+
+
+    <item android:id="@+id/item_3"
+        android:title="Item_3"
+        android:icon="@drawable/icon_piu"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:id = "@+id/submenu1"
+                android:title="submenu1_item2">
+            </item>
+            <item android:id = "@+id/submenu2"
+                android:title="submenu2_item2">
+            </item>
+        </menu>
+    </item>
+
+
+    <item android:id="@+id/delete_menu"
+        android:title="@string/delete_menu">
+
+    </item>
+</menu>
+

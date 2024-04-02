@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/continua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:context=".SignupActivity">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/sign_up"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:labelFor="@+id/nome"
+                android:text="@string/name"
+                android:textColor="#448AFF"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/nome"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="40dp"
+                android:ems="10"
+                android:importantForAccessibility="no"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/color_cursor"/>
+
+            <TextView
+                android:id="@+id/textCognome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/surname"
+                android:textColor="#448AFF"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/cognome"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="40dp"
+                android:ems="10"
+                android:importantForAccessibility="no"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/color_cursor"/>
+
+            <TextView
+                android:id="@+id/labelBdDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/bdDate"
+                android:textColor="#448AFF"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/bdDate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:hint="@string/date"
+                android:inputType="date"
+                android:textSize="12sp"
+                android:textCursorDrawable="@drawable/color_cursor"/>
+
+            <TextView
+                android:id="@+id/textGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/gender"
+                android:textColor="#448AFF"
+                android:textSize="12sp" />
+
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="40dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/male"
+                    android:textColor="@color/material_dynamic_neutral_variant30" />
+
+                <RadioButton
+                    android:id="@+id/F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:textColor="@color/material_dynamic_neutral_variant30" />
+
+                <RadioButton
+                    android:id="@+id/A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:textColor="@color/material_dynamic_neutral_variant30" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:labelFor="@+id/tel"
+                android:text="@string/telephone"
+                android:textColor="#448AFF"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="40dp"
+                android:ems="10"
+                android:textSize="12sp"
+                android:importantForAccessibility="no"
+                android:inputType="phone"
+                android:textCursorDrawable="@drawable/color_cursor"/>
+
+            <TextView
+                android:id="@+id/textemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:labelFor="@+id/emailaddress"
+                android:text="@string/email"
+                android:textColor="#448AFF"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/emailaddress"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="40dp"
+                android:ems="10"
+                android:hint="@string/example_mail"
+                android:inputType="textEmailAddress"
+                android:textSize="12sp"
+                android:textCursorDrawable="@drawable/color_cursor"/>
+
+            <TextView
+                android:id="@+id/textpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:labelFor="@+id/password"
+                android:text="@string/password"
+                android:textColor="#448AFF"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="40dp"
+                android:ems="10"
+                android:importantForAccessibility="no"
+                android:inputType="textPassword" />
+
+
+            <TextView
+                android:id="@+id/textRepeatPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:labelFor="@+id/repeatPassword"
+                android:text="@string/repeatPass"
+                android:textColor="#448AFF"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/repeatPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="40dp"
+                android:ems="10"
+                android:importantForAccessibility="no"
+                android:inputType="textPassword"
+                app:passwordToggleEnabled="true"
+                android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/agree_conditions"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColor="@color/material_dynamic_neutral_variant30" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/continua"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="#448AFF"
+        android:text="@string/continue_b"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
